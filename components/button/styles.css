@@ -1,0 +1,41 @@
+.dbc-ui-button {
+    padding: 1rem 1.5rem;
+    max-width: max-content;
+    font: 400 1rem / 1rem sans-serif;
+    border: 1px solid transparent;
+    outline-offset: 1px;
+    color: var(--dbc-ui-button-label-color, #FFFFFF);
+    cursor: pointer;
+    transition: border-radius 300ms cubic-bezier(.4, 0, .2, 1) 300ms;
+}
+
+.dbc-ui-button:hover {
+    border-radius: 31.25rem;
+}
+
+.dbc-ui-button:focus {
+    outline: 1px solid #000;
+    outline-offset: 2px;
+}
+
+.dbc-ui-button:disabled {
+    background-color: #636363;
+    cursor: not-allowed;
+}
+
+.dbc-ui-button-contained {
+    background-color: var(--dbc-ui-button-bg-color, #004BF5);
+    border-color: var(--dbc-ui-button-border-color, transparent);
+}
+
+.dbc-ui-button-outlined {
+    background-color: transparent;
+    border: 1px solid var(--dbc-ui-button-border-color, #f00);
+}
+
+.dbc-ui-button-outlined:focus {
+    outline: 1px solid #000;
+    outline-offset: 2px;
+    color: var(--dbc-ui-button-label-color, #000);
+    background-color: var(--dbc-ui-button-focus-color, #fff);
+}

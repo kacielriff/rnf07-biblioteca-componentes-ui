@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DBC UI - A Biblioteca de Componentes React da DBC
 
-## Getting Started
+Bem-vindo à **Biblioteca de Componentes DBC**! Esta documentação visa fornecer todas as informações necessárias para o 
+uso de componentes desenvolvida para os projetos da DBC. A biblioteca é construída utilizando **React** com 
+**TypeScript** e integrada ao **Storybook** para visualização, desenvolvimento e testes de componentes.
 
-First, run the development server:
+## Índice
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. [Introdução](#introdução)
+2. [Instalação](#instalação)
+3. [Uso dos Componentes](#uso-dos-componentes)
+4. [Executando o Storybook](#executando-o-storybook)
+5. [Boas Práticas](#boas-práticas)
+
+---
+
+## Introdução
+
+A Biblioteca de Componentes DBC foi criada para facilitar a reutilização de componentes visuais nos projetos da DBC. 
+Cada componente é projetado para ser modular, reutilizável, acessível e personalizável, permitindo que desenvolvedores 
+integrem facilmente os componentes nos seus projetos.
+
+Essa biblioteca tem como foco a flexibilidade e a consistência visual, além 
+de oferecer variações e propriedades de estilo configuráveis para cada componente.
+
+---
+
+## Instalação
+
+Para instalar a biblioteca de componentes DBC em seu projeto, siga os passos abaixo:
+
+1. Instale a biblioteca via NPM:
+
+   ```bash
+   npm install dbc-ui-library
+   ```
+
+2. Instale as dependências relacionadas ao tema, se necessário:
+
+3. Importe os componentes no seu projeto da seguinte forma:
+
+   ```typescript
+   import { Button } from 'dbc-ui-library';
+   ```
+
+---
+
+## Uso dos Componentes
+
+### Exemplo de Uso
+
+Cada componente é configurável por meio de props, que permitem a personalização de comportamento e estilo. Veja abaixo 
+um exemplo de uso do componente **Button**:
+
+```tsx
+import { Button } from 'dbc-ui-library';
+
+export function MyComponent() {
+  return (
+    <Button label="Clique aqui" onClick={() => console.log('Clicked!')} />
+  );
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Personalização de Estilos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Cada componente permite a customização dos estilos através de props ou classes adicionais com a prop **className**. 
+Além disso, você pode estender os estilos utilizando `styled-components`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Executando o Storybook
 
-To learn more about Next.js, take a look at the following resources:
+O **Storybook** é utilizado para visualizar e testar os componentes em um ambiente isolado. Para rodar o Storybook 
+localmente:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone o projeto que contém o Storybook:
+    ```bash
+    git clone 
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Instale as dependências do projeto:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Execute o comando para iniciar o Storybook:
+   ```bash
+   npm run storybook
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. O Storybook estará disponível em `http://localhost:6006`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Configuração do Storybook
+
+As configurações do Storybook estão localizadas na pasta `.storybook`, onde você pode adicionar novas configurações 
+conforme necessário.
+
+---
+
+## Conclusão
+
+Essa documentação oferece uma visão geral da **Biblioteca de Componentes DBC**. Esperamos que você tenha uma 
+experiência produtiva utilizando ou contribuindo com essa biblioteca! Para qualquer dúvida ou problema, sinta-se à 
+vontade para abrir uma issue ou enviar uma mensagem para a equipe responsável.
+
+**Happy coding!**

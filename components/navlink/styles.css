@@ -1,0 +1,31 @@
+.dbc-ui-navlink {
+    text-align: center;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid transparent;
+    font: 400 1rem/1.5rem sans-serif;
+    border-radius: 2rem;
+    background-color: var(--dbc-ui-navlink-bg-color, transparent);
+    color: var(--dbc-ui-navlink-label-color, #040C2C);
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+
+.dbc-ui-navlink:hover {
+    border-color: var(--dbc-ui-navlink-border-color, #040C2C);
+}
+
+.dbc-ui-navlink:not(:active):focus {
+    padding: 0.5rem 0.75rem;
+    border-color: var(--dbc-ui-navlink-border-color, #040C2C);
+    border-radius: 0;
+}
+
+.dbc-ui-navlink:active {
+    border-color: var(--dbc-ui-navlink-border-color, #040C2C);
+    background-color: var(--dbc-ui-navlink-focus-color, #E9F2FF);
+}
+
+.dbc-ui-navlink:visited {
+    color: var(--dbc-ui-navlink-label-color, #040C2C);
+}
