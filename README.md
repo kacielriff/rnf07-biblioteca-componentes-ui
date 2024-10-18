@@ -76,7 +76,7 @@ localmente:
 
 1. Clone o projeto que contém o Storybook:
     ```bash
-    git clone 
+    git clone https://github.com/kacielriff/rnf07-biblioteca-componentes-ui.git
     ```
 
 2. Instale as dependências do projeto:
