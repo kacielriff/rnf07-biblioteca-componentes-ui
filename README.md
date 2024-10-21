@@ -10,7 +10,7 @@ uso de componentes desenvolvida para os projetos da DBC. A biblioteca é constru
 2. [Instalação](#instalação)
 3. [Uso dos Componentes](#uso-dos-componentes)
 4. [Executando o Storybook](#executando-o-storybook)
-5. [Boas Práticas](#boas-práticas)
+5. [Conclusão](#conclusão)
 
 ---
 
